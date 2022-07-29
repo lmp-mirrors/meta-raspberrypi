@@ -6,6 +6,18 @@ name: Builds
 
 on:
   pull_request:
+    paths:
+      - '.github/actions/**'
+      - '.github/workflows/docker-images/yocto-builder/**'
+      - '.github/workflows/docker-images/*.sh'
+      - '.github/workflows/yocto-builds.yml'
+      - 'classes'
+      - 'conf'
+      - 'dynamic-layers'
+      - 'files'
+      - 'lib'
+      - 'recipes-**'
+      - 'wic'
 
 jobs:
   build:
